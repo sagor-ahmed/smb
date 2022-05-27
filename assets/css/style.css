@@ -1,0 +1,650 @@
+/*--
+    - 1.Theme default CSS
+-----------------------------------------*/
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: 'Cormorant Garamond';
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*--
+    - BASIC SETUP
+-----------------------------------------*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* -----  Selection Color css ----- */
+
+ ::-moz-selection {
+    background: var(--primary-color);
+    color: var(--color-033);
+}
+
+::selection {
+    background: var(--primary-color);
+    color: var(--color-033);
+}
+
+
+/* -----  Scrollbar Css ----- */
+
+ ::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    width: 10px;
+    background: var(--color-033);
+    border-left: 0px solid #000000;
+    border-right: 0px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 35%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    background: #fff;
+    border-left: 0px solid #fff;
+    border-right: 0px solid #fff;
+    border-right: 0px solid #fff;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+a,
+a:focus {
+    text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+button,
+input,
+textarea {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: var(--size-30);
+    color: var(--primary-color);
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* 
+=====================================
+Variables
+=====================================
+*/
+
+:root {
+    --size-68: 4.25rem;
+    --size-48: 3rem;
+    --size-30: 1.875rem;
+    --size-20: 1.25rem;
+    --size-16: 1.6rem;
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --color-033: #033762;
+    --color-99: #0099FF;
+}
+
+
+/* 
+==============================
+Font Size
+==============================
+*/
+
+.font-size-68 {
+    font-size: var(--size-68);
+}
+
+.font-size-30 {
+    font-size: var(--size-30);
+}
+
+.font-size-20 {
+    font-size: var(--size-20);
+}
+
+
+/* 
+=================================
+Font Color
+=================================
+*/
+
+.text-white {
+    color: var(--primary-color);
+}
+
+
+/* 
+====================================
+Background Color
+====================================
+*/
+
+.bg-color-3a {
+    background: var(--primary-color);
+}
+
+
+/*--
+    - START REUSABLE COMPONENTS
+-----------------------------------------*/
+
+.vh-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.arrow-down {
+    display: none;
+}
+
+.arrow-down img {
+    width: 60px;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p-150 {
+    padding: 150px 0;
+}
+
+.p-110 {
+    padding: 110px 0;
+}
+
+.p-25 {
+    padding: 25px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.page2-section-padding {
+    padding: 100px 0 135px 0!important;
+}
+
+
+/*===================================================================================*/
+
+
+/*  02. START SITE CONTENT CSS
+/*===================================================================================*/
+
+
+/* ============== page 1 css start================*/
+
+
+/* header video content css here*/
+
+.header-video-content {
+    background-image: url('/assets/img/standsome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-video-text {
+    text-align: center;
+}
+
+.header-video-text h1 {
+    color: #fff;
+    font-size: 53px;
+    line-height: 1.1;
+}
+
+
+/*---------about us css here----------*/
+
+.about-us {
+    background-image: url('/assets/img/Path183.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.about-us p,
+.our-equity p {
+    color: var(--primary-color);
+    font-size: var(--size-20);
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    margin-bottom: 0px;
+}
+
+.about-us-content,
+.our-equity-content,
+.contact-us-content {
+    padding: 0 120px;
+}
+
+.about-us-content h2,
+.our-equity-content h2,
+.contact-us-content h2 {
+    margin-bottom: 35px;
+}
+
+
+/*---------- ]COPYRIGHT TEXT CSS HERE ----------*/
+
+.copyright-text span {
+    color: var(--primary-color);
+}
+
+
+/*---------- OUR EQUITY CSS HERE ----------*/
+
+.our-equity {
+    background-image: url('/assets/img/moon-31665.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+
+/*----------CONTACT US CSS HERE----------*/
+
+.contact-us {
+    background-image: url('/assets/img/Bitmap2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contact-us-content span {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+}
+
+.contact-us-content h3 {
+    font-size: 30px;
+    color: #fff;
+    border-bottom: 2px solid #efefef;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 0 0 5px 0;
+}
+
+
+/*-------- menu area css here -------------*/
+
+.transparent-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 9;
+}
+
+.header-menu-drop {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu-box {
+    border-bottom: 2px solid #75757E;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+}
+
+.main-menu ul li a {
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    transition: all .3s ease;
+    border-bottom: 4px solid transparent;
+    padding: 20px 0;
+}
+
+.main-menu ul li a:hover {
+    color: #efefef;
+    border-color: #fff;
+}
+
+.main-menu ul li .submenu {
+    position: absolute;
+    background: rgba(24, 24, 24, 0.4);
+    width: 400px;
+    padding: 20px 0;
+    visibility: hidden;
+    transition: 0.3s;
+    top: 103%;
+    z-index: 999999999999;
+}
+
+.main-menu ul li:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu ul li .submenu li {
+    margin-left: 25px;
+    display: block;
+    padding: 6px 0;
+}
+
+.main-menu ul li .submenu li a {
+    color: #b9a8a8;
+    font-size: 15px;
+    text-align: left;
+    padding: 0px;
+    border: none;
+}
+
+.main-menu ul li .submenu li:hover a {
+    color: #fff;
+}
+
+.main-menu {
+    text-align: right;
+}
+
+.menu-border {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #fff;
+    opacity: 0;
+    visibility: hidden;
+    padding-right: 15px;
+}
+
+.main-menu ul li .submenu li a:hover .menu-border {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* -------- SELECT PICKER CSS ----------- */
+
+select.selectpicker {
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    padding: 0;
+    margin-top: -6px;
+}
+
+select.selectpicker option {
+    color: #000;
+    border: none;
+    outline: none;
+}
+
+
+/* -------- PAGE 2 CSS START ----------- */
+
+
+/* -------- investment-banking CSS HERE ----------- */
+
+.investment-banking {
+    background-image: url('/assets/img/Path183.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.investment-banking-content ul li {
+    display: flex;
+    font-size: var(--size-20);
+    color: var(--primary-color);
+}
+
+.investment-banking-content ul li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.investment-banking {
+    padding: 80px 0;
+}
+
+
+/* --------------- ASSET MANAGEMENT CSS HERE -------------------- */
+
+.asset-management {
+    background-image: url('/assets/img/Path183.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.asset-management-content p,
+.investment-banking-content p,
+.equity-investment p,
+.p-trade-financing p {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: var(--size-20);
+}
+
+.asset-management-content h2,
+.investment-banking-content h2,
+.equity-investment h2,
+.p-trade-financing h2 {
+    margin-bottom: 1.875rem;
+}
+
+
+/* ------------ EQUITY MANAGEMENT CSS HERE ------------------ */
+
+.equity-investment {
+    background-image: url('/assets/img/Path183.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ----- P-TRADE-FINANCING CSS HERE----- */
+
+.p-trade-financing {
+    background-image: url('/assets/img/moon-31665.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p-trade-financing-content ul {
+    color: var(--primary-color);
+    font-size: var(--size-20);
+    margin-bottom: 30px;
+}
+
+.p-trade-financing-content ul li {
+    display: block;
+}
+
+.p-trade-financing-content span {
+    color: #fff;
+}
+
+.p-trade-financing-content ul li::before {
+    content: "\2022";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 0.625rem;
+    margin-left: 0.9375rem;
+    margin-right: 0.5rem;
+}
+
+
+/*header sticky*/
+
+.sticky {
+    background-color: #fff !important;
+    color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    -webkit-box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.scrolls {
+    display: none;
+}
+
+.sticky .main-menu ul li a {
+    color: #000;
+}
+
+.sticky .main-menu ul li a:hover {
+    border-color: #033763;
+}
+
+.sticky .menu-box {
+    border-bottom: 0px solid transparent;
+}
+
+
+/*bussiness header*/
+
+.bussiness-header .sticky {
+    background-color: #fff !important;
+}
+
+.bussiness-header.menu-area .sticky .main-menu ul li a {
+    color: #000;
+}
+
+.bussiness-header .main-menu ul li a {
+    color: #000;
+}
+
+.bussiness-header.menu-area .sticky .main-menu ul li a:hover {
+    border-color: #033763;
+}
+
+.bussiness-header .main-menu ul li a:hover {
+    border-color: #033763;
+}
+
+.bussiness-header .menu-box {
+    border-bottom: 0px solid transparent;
+}
+
+.mean-container a.meanmenu-reveal {
+    margin-top: -41px!important;
+}
+
+.sticky .mean-container a.meanmenu-reveal span {
+    background: #000!important;
+}
+
+.mean-container a.meanmenu-reveal {
+    border: 1px solid transparent!important;
+}
+
+.sticky .mean-container a.meanmenu-reveal span {
+    background: #000;
+}
+
+.sticky .meanmenu-reveal.meanclose {
+    color: black;
+}
+
+.bussiness-header .mean-container a.meanmenu-reveal span {
+    background: #000;
+}
+
+.bussiness-header .meanmenu-reveal.meanclose {
+    color: black;
+}
+
+.sticky select.selectpicker {
+    color: #000;
+}
+
+.bussiness-header select.selectpicker {
+    color: black;
+    opacity: 1;
+}

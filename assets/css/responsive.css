@@ -1,0 +1,207 @@
+/*
+=========================================
+Responsive Breakpoint
+=========================================
+*/
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 19px;
+    }
+    select.selectpicker {
+        display: none;
+    }
+    .vh-center {
+        position: relative;
+    }
+    .copyright-text {
+        text-align: center;
+    }
+    .about-us-content,
+    .our-equity-content,
+    .contact-us-content {
+        padding: 0 20px;
+    }
+    .p-150 {
+        padding: 50px 0;
+    }
+    .p-110 {
+        padding: 50px 0;
+    }
+    .menu-box {
+        border-bottom: none;
+    }
+    .mean-container a.meanmenu-reveal {
+        margin-top: -12px!important;
+    }
+    .logo {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 18px;
+    }
+    .mean-container a.meanmenu-reveal {
+        margin-top: -41px!important;
+    }
+    /* 
+	===============================
+	 INVESTMENT BANKING Responsive
+	===============================
+	*/
+    .investment-banking-content ul li {
+        display: block!important;
+    }
+    .investment-banking-content {
+        text-align: center;
+    }
+    .asset-management-content p,
+    .investment-banking-content p,
+    .equity-investment p,
+    .p-trade-financing p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .investment-banking-content ul li {
+        font-size: 20px;
+    }
+    .p-trade-financing-content ul li {
+        font-size: 20px;
+    }
+    .investment-banking-content ul li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .investment-banking-content {
+        padding: 0 30px;
+    }
+    .investment-banking-content,
+    .asset-management-content,
+    .equity-investment-content,
+    .p-trade-financing-content {
+        text-align: center;
+        padding: 0 30px;
+    }
+    .investment-banking {
+        padding: 4rem 0;
+    }
+    .page2-section-padding {
+        padding: 50px 0 50px 0!important;
+    }
+    .p-trade-financing-content ul {
+        margin-bottom: 20px;
+    }
+    /* 
+	===============================
+	Header Video Responsive
+	===============================
+	*/
+    .about-us-content,
+    .our-equity-content,
+    .contact-us-content {
+        padding: 0 0px;
+    }
+    .header-video-text h1 {
+        font-size: 36px;
+    }
+    .scrolls {
+        display: none;
+        position: relative;
+    }
+    .copyright-text {
+        display: none;
+    }
+    .asset-management-content h2,
+    .investment-banking-content h2,
+    .equity-investment h2,
+    .p-trade-financing h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    .arrow-down {
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    /* 
+	===============================
+	Header Section Responsive
+	===============================
+	*/
+    nav .main-menu {
+        width: 80%;
+    }
+    /* 
+	===============================
+	 Section Responsive
+	===============================
+	*/
+    .header-video-text h1 {
+        font-size: 26px;
+    }
+    .header-video-text {
+        padding: 0 11px;
+    }
+    .p-150 {
+        padding: 70px 0;
+    }
+    .about-us {
+        height: 100vh;
+    }
+    .our-equity {
+        height: 100vh;
+    }
+    .about-us p,
+    .our-equity p {
+        font-size: 19px;
+        line-height: 1.2;
+    }
+    .about-us {
+        display: block;
+    }
+    .our-equity {
+        display: block;
+    }
+    .p-150 {
+        padding: 60px 0;
+    }
+    .about-us-content h2,
+    .our-equity-content h2,
+    .contact-us-content h2 {
+        margin-bottom: 35px;
+        font-size: 25px;
+    }
+    .our-equity .p-110 {
+        padding: 60px 0 0px 0;
+    }
+    .our-equity .scrolls img {
+        bottom: -60px;
+    }
+    .contact-us-content h3 {
+        font-size: 22px;
+    }
+    .contact-us {
+        display: block;
+        height: 100vh;
+    }
+    .p-25 {
+        padding: 5px;
+    }
+    .arrow-down img {
+        width: 60px;
+        position: relative;
+        top: 174px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
